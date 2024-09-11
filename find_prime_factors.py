@@ -11,10 +11,9 @@ def find_all_number_prime (number) :
     while number >= devisor : ### while the number given by the user is bigger or equal the devisor we gonna enter this loop
         if number % devisor != 0 : #### we check first if number is prime of the 1st devisor if not we add 1 to the devisor 
          devisor += 1
-        while number % devisor == 0 :  ####this loop to append the primes to var prime_number 
+        else :  
          prime_number.append(devisor)
          number = number/devisor
-        devisor += 1
         
   print("the primes of the number",prime_number)
 
